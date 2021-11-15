@@ -127,4 +127,4 @@ crontab -l    // Can be added to scheduled tasks, such as automatic backups ever
 For feedback, questions, and to follow the progress of the project: <br />
 Tencent QQ : 1473934158 <br />
 [Telegram Group](https://t.me/ErinYeo)<br />
-[infvie's Blog. All Rights Reserved.](https://www.infvie.com)<br />
+[Infvie Envoy. All Rights Reserved.](https://www.infvie.com)<br />
