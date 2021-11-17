@@ -1,16 +1,16 @@
-This EnvoyInStack script is written using the shell, in order to quickly deploy (Linux, Nginx/OpenResty, MySQL in a production environment/MariaDB/, JAVA), applicable to CentOS 6 ~ 8(including 
-redhat) of 32 and 64.
+This [EnvoyinStack](https://mirrors.infvie.org/envoyinstack/) script is written using the shell, in order to quickly deploy (Linux, Nginx/OpenResty, MySQL in a production environment/MariaDB/, JAVA,ElasticStack), applicable to Cent
+OS 7~ 8(including redhat) of 64.
 
 Script properties:
 - Continually updated, Provide Shell Interaction and Autoinstall
 - Source compiler installation, most stable source is the latest version, and download from the official site
 - Some security optimization
-- Providing a plurality of database versions (MySQL-8.0, MySQL-5.7, MySQL-5.6, MariaDB-10.4, MariaDB-10.3, MariaDB-10.2, PostgreSQL, MongoDB)
+- Providing a plurality of database versions (MySQL-8.0, MySQL-5.7, MySQL-5.6, MariaDB-10.6, MariaDB-10.5, MariaDB-10.4, PostgreSQL, MongoDB)
 - Provide Nginx, OpenResty, Rabbitmq, Fastdfs + Fastdht
 - Provide Mysql group replication and Proxysql,multi source replication(master slaves)
 - Provide Gateway kong server and konga
 - Provide Automatically push keys to remote servers
-- Providing a plurality of Tomcat version (Tomcat-9, Tomcat-8, Tomcat-7)
+- Providing a plurality of Tomcat version (Tomcat-10,Tomcat-9, Tomcat-8, Tomcat-7)
 - Providing a plurality of JDK version (JDK-11.0, JDK-1.8, JDK-1.7)
 - Install redis according to their needs
 - Jemalloc optimize MySQL, Nginx
