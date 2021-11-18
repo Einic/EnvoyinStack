@@ -1,5 +1,6 @@
-This [EnvoyinStack](https://mirrors.infvie.org/envoyinstack/) script is written using the shell, in order to quickly deploy (Linux, Nginx/OpenResty, MySQL in a production environment/MariaDB/, JAVA,ElasticStack), applicable to Cent
-OS 7~ 8(including redhat) of 64.
+### This [EnvoyinStack](https://mirrors.infvie.org/envoyinstack/)  script is written using the shell, in order to quickly deploy (Linux, Nginx/OpenResty, MySQL in a production environment/MariaDB/, JAVA,ElasticStack,Powerline), applicable to CentOS 7 ~ 8(including redhat) of 64.
+
+#### Supports automatic deployment in the intranet environment. Just put some required rpm packages in src/yum-custom/packages/ and execute ./install.sh --help to initialize the index file of the warehouse directory.
 
 Script properties:
 - Continually updated, Provide Shell Interaction and Autoinstall
@@ -9,6 +10,8 @@ Script properties:
 - Provide Nginx, OpenResty, Rabbitmq, Fastdfs + Fastdht
 - Provide Mysql group replication and Proxysql,multi source replication(master slaves)
 - Provide Gateway kong server and konga
+- Provide ElasticStack-7.15.2(elasticsearch and kibana The platinum version never expires)
+- Provide Powerline is a statusline plugin for vim, and provides statuslines and prompts for several other applications, including bash
 - Provide Automatically push keys to remote servers
 - Providing a plurality of Tomcat version (Tomcat-10,Tomcat-9, Tomcat-8, Tomcat-7)
 - Providing a plurality of JDK version (JDK-11.0, JDK-1.8, JDK-1.7)
@@ -17,7 +20,7 @@ Script properties:
 - Provide Nginx/OpenResty/Tomcat, MySQL/MariaDB, Redis upgrade script
 - Provide local,remote(rsync between servers),Aliyun OSS backup script
 
-## Installation
+### Installation
 Install the dependencies for your distro, download the source and run the installation script.
 
 #### CentOS/Redhat
@@ -35,7 +38,7 @@ If you need to modify the directory (installation, data storage, Nginx logs), mo
 ```bash
 ./install.sh
 ```
-##### Eg :
+#### Eg :
 
 Automatically push keys to remote servers
 ```bash
@@ -101,7 +104,15 @@ Install Gateway kong server and konga
 ```bash
 ./install.sh --kong
 ```
-## How to backup
+Install the platinum version never expires(elasticsearch,kibana)
+```bash
+./install.sh --elasticstack
+```
+Install powerline is a statusline plugin for vim and bash
+```bash
+./install.sh --powerline
+```
+#### How to backup
 
 ```bash
 ~/envoyinstack/backup_setup.sh    // Backup parameters
@@ -110,19 +121,19 @@ crontab -l    // Can be added to scheduled tasks, such as automatic backups ever
 0 1 * * * cd ~/envoyinstack/backup.sh  > /dev/null 2>&1 &
 ```
 
-## How to upgrade
+#### How to upgrade
 
 ```bash
 ~/envoyinstack/upgrade.sh
 ```
 
-## How to uninstall
+#### How to uninstall
 
 ```bash
 ~/envoyinstack/uninstall.sh
 ```
 
-## Installation
+### Installation
 
 For feedback, questions, and to follow the progress of the project: <br />
 Tencent QQ : 1473934158 <br />
